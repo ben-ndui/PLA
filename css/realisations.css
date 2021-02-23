@@ -27,7 +27,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Quicksand;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-realisation{
+    width: 80%;
+    margin: auto;
+}
+
+.header-realisation {
+    background: url("../assets/background/reference.svg") no-repeat center;
+    background-size: contain;
 }
 
 .my-element{
