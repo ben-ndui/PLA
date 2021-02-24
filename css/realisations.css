@@ -47,10 +47,17 @@
     /*border: 1px solid red;/**/
 }
 
+.my-element .article-title{
+    color: #FF6100;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
 .my-element-elem{
     width: 300px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--globalOrange);
+    /*border: 1px solid green;/**/
 }
 
 .my-element-elem a, .my-element-elem a:visited{
@@ -58,17 +65,12 @@
 }
 
 .my-element-elem .my-img{
-    width: 50px;
-    height: 50px;
+    width: 100%;
     /*border: 1px solid blue;/**/
 }
 
 .my-element-elem h2{
-    margin-bottom: 20px;
-}
-
-.my-element-elem-left{
-    /*border: 1px solid red;/**/
+    margin-bottom: 2px;
 }
 
 .my-element-elem-left .left-elem{
@@ -80,4 +82,16 @@
 
 .my-element-elem-right{
     flex: 1 1 200px;
+}
+
+
+
+.consulter{
+    width: 30%;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: -4px;
+    background: url("../assets/components/en_savoir_plus.png") no-repeat left;
+    background-size: contain;
+    /*border: 1px solid red;/**/
 }

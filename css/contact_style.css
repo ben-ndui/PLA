@@ -9,26 +9,35 @@
     list-style-type: none;
 }
 
+.patrice{
+    text-align: center;
+    font-size: 30px;
+    /*border: 1px solid white;/**/
+}
+
+.my-header .patrice-bloc{
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .contact-header{
     width: 100%;
     height: 50vh;
     background: var(--globalOrange);
     font-family: 'Quicksand', sans-serif;
+    box-shadow: none;
 }
 
 .container-contact{
-    position: absolute;
-    width: 50%;
-    top: 10vh;
+    width: 100%;
     left: 50%;
     text-align: center;
     background: var(--my-white);
-    transform: translate(-50%, 0);
 }
 
 .container-contact .header-pres-in-contact{
     width: 100%;
-    height: 40.1vh;
+    height: 10vh;
     background: var(--globalOrange);
 }
 
@@ -118,12 +127,15 @@
 
 .more-infos{
     width: 100%;
-    padding: 30px 50px;
+    padding: 30px 200px;
+    /*border: 1px solid blue;/**/
 }
 
 .more-infos .more-infos-elem{
     text-align: left;
     margin: 50px;
+    font-size: 22px;
+    /*border: 1px solid grey;/**/
 }
 
 .more-infos .more-infos-elem a{
@@ -133,7 +145,6 @@
 }
 
 .more-infos .more-infos-elem a:hover{
-    font-size: 20px;
     color: #FF6100;
 }
 

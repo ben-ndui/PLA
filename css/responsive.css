@@ -1,0 +1,239 @@
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait){
+
+    .more-infos{
+        padding: 0;
+    }
+
+    .link{
+        font-size: 25px;
+    }
+
+    .link-responsive{
+        font-size: 35px;
+    }
+
+    .consulter{
+        width: 50%;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .top, .bottom{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .top img{
+        width: 100%;
+    }
+
+    .title-strong{
+        font-size: 23px;
+    }
+
+    .strong-responsive{
+        font-size: 30px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-contact{
+        display: block;
+        z-index: 10;
+    }
+
+    .home-elem, .main-footer > .footer-elem{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .home-elem-image{
+        width: 50%;
+    }
+
+    .text-pres-service {
+        width: 100%;
+        font-size: 12px;
+        margin: 5% 10% 5% auto;
+        text-align: justify;
+    }
+
+    .my-header .logo-and-title {
+        position: absolute;
+        top: 80%;
+        left: 30%;
+        transform: translate(-30%, -60%);
+    }
+
+    .my-header .header-nav-bar{
+        padding: 10px;
+    }
+    .my-header .header-nav-bar .header-nav-bar-humburger{
+        display: block;
+    }
+
+    .my-header-nav-bar .menu-coulissant{
+        transition: display 10s ease-in-out;
+    }
+
+    .my-header .header-nav-bar:hover > .menu-coulissant{
+        display: block;
+        transition: display 10s ease-in-out;
+    }
+
+    .my-header-nav-bar .menu-coulissant li{
+        list-style-type: none;
+        padding: 5px;
+        transition: all 10s ease-in-out;
+    }
+
+    .my-header-nav-bar .menu-coulissant li:hover > a{
+        border-bottom: 1px solid var(--globalOrange);
+    }
+
+    .my-header-nav-bar .menu-coulissant li a{
+        text-decoration: none;
+        color: var(--text-color-theme);
+    }
+
+    .my-header .header-nav-bar .header-nav-bar-humburger{
+        opacity: 1;
+        border: 1px solid var(--globalOrange);
+    }
+
+    .my-header .header-nav-bar .header-nav-bar-humburger .humburger-bar{
+        background: var(--globalOrange);
+    }
+
+    .container-service, .container-home-presentation, .main-footer, .container-realisation, .my-element{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    /**
+    ** REALISATION
+     */
+
+    .my-element{
+        width: 100%;
+    }
+
+    /**
+    *** PRESTATION
+     */
+
+    .header-prestation img{
+        object-fit: cover;
+    }
+
+    .my-header .logo-and-title-prestation{
+        left: 19%;
+    }
+}
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px){
+
+    .card{
+        width: 28%;
+    }
+
+    .main-footer{
+        justify-content: space-around;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 800px){
+
+    .more-infos{
+        padding: 0;
+    }
+
+    .top img{
+        width: 70%;
+    }
+
+    .container-service, .container-home-presentation, .container-realisation, .my-element, .container-realisation{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+
+    }
+
+    .my-element-elem{
+        width: 100%;
+    }
+
+    .main-footer{
+        justify-content: space-around;
+    }
+
+    .home-elem{
+        width: 93%;
+    }
+
+    .home-elem-image img{
+        width: 30%;
+    }
+
+    .card{
+        width: 100%;
+        height: 400px;
+    }
+
+    .front .img-audit{
+        width: 28%;
+    }
+
+    .front h3{
+        font-size: 30px;
+    }
+
+    .consulter{
+        height: 50px;
+    }
+
+    .blog-card img{
+        height: auto;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .blog-card{
+        width: 95%;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 414px){
+    .card {
+        width: 97%;
+        height: 400px;
+    }
+}
+
+
+/* Sur les téléviseurs */
+@media tv{
+
+}

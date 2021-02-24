@@ -265,3 +265,8 @@ only screen and (hover: none) {
     }
 
 }
+
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+}
