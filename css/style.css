@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
 :root {
     /* COULEUR ORANGE */
@@ -34,7 +35,7 @@ body, html {
     overflow-x: hidden;
 }
 
-h1{
+h1 {
     color: var(--text-color-theme);
 }
 
@@ -50,7 +51,9 @@ h1{
 }
 
 .link {
+    font-size: 50px;
     color: white;
+    width: 100%;
     text-decoration: none;
 }
 
@@ -59,6 +62,7 @@ h1{
 }
 
 .top, .bottom {
+    position: relative;
     text-align: center;
     padding: 10px;
     margin: 50px auto;
@@ -66,13 +70,31 @@ h1{
     font-size: 25px;
 }
 
-.top a, .bottom a{
+.top img{
+    width: 100%;
+}
+
+.top a, .bottom a {
     text-decoration: none;
     transition: all .5s ease-in-out;
 }
 
-.top a:hover, .bottom a:hover{
+.top a:hover, .bottom a:hover {
     font-size: 25px;
+}
+
+.top-en-savoir-plus{
+    float: right;
+    width: 12%;
+    margin-top: -5%;
+    margin-right: 5%;
+    /*border: 1px solid red;/**
+    z-index: 100;*/
+}
+
+.top-en-savoir-plus img{
+    width: 100%;
+    height: 100%;
 }
 
 .text-pres-service {
@@ -121,7 +143,7 @@ h1{
     color: white;
     width: 100%;
     height: 72vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    mask-image: linear-gradient(rgba(0, 0, 0, .5), transparent);
     background-size: cover;
     box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, .5);
     /*border: 1px solid red;/**/
@@ -142,23 +164,21 @@ h1{
 
 .my-header .logo-and-title { /*Block contenant le logo et le titre de la page d'accueil*/
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+    top: 70%;
+    left: 8%;
 }
 
 .logo {
     position: absolute;
     color: #FF6100;
-    width: 60px;
-    height: 60px;
+    width: 20%;
+    height: 20%;
     font-size: 20px;
-    top: 60%;
-    left: 5%;
-    background-size: cover;
-    transform: translate(-50%, -50%);
-    background: url("../assets/logo/logo2.svg") no-repeat;
+    top: 3%;
+    left: 8%;
+    background: url("../assets/logo/LOGO_Pla-Development.jpg") no-repeat;
     background-size: contain;
+    z-index: 100;
     /*border: 1px solid red;/**/
 }
 
@@ -214,7 +234,6 @@ h1{
 }
 
 
-
 /**************
 ** MENU BAR  **
  **************/
@@ -234,6 +253,7 @@ h1{
 
 .menu ul li a {
     color: var(--text-color-theme);
+    font-size: 25px;
     transition: all .2s ease-in-out;
 }
 
@@ -271,7 +291,7 @@ h1{
     perspective: 600px;
 }
 
-.card-prestation{
+.card-prestation {
     width: 30%;
 }
 
@@ -313,13 +333,13 @@ h1{
     background-repeat: no-repeat;
 }
 
-.front .img-audit{
+.front .img-audit {
     transition: all .5s ease-in-out;
     width: 40%;
     transform: translate(5%, 20%);
 }
 
-.card:hover .img-audit{
+.card:hover .img-audit {
     opacity: 0;
     transition: all .5s ease-in-out;
 }
@@ -332,12 +352,16 @@ h1{
     left: 10%;
     font-size: 25px;
     z-index: 2;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
     color: var(--text-color-theme);
     transform: translate(0, 0);
 }
 
-.front h3.presta-title{
+.front h3.presta-title {
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .back {
@@ -349,13 +373,14 @@ h1{
 }
 
 .back h3 {
-    margin-top: 10px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 .back p {
     width: 100%;
-    padding: 10px;
-    font-size: 14px;
+    padding: 20px 10px;
+    font-size: 18px;
     text-align: justify-all;
     overflow: hidden;
     color: var(--my-white);
@@ -404,7 +429,7 @@ h1{
     color: var(--my-black);
 }
 
-.home-elem-desc-all-1{
+.home-elem-desc-all-1 {
     width: 60vw;
     font-size: 22px;
     box-shadow: none;
@@ -505,7 +530,7 @@ h1{
     /*border: 1px solid blue;/**/
 }
 
-.main-footer > .footer-elem li a{
+.main-footer > .footer-elem li a {
     /*border: 1px solid green;/**/
     height: 100%;
     text-decoration: none;
@@ -513,15 +538,15 @@ h1{
     transition: all .5s ease-in-out;
 }
 
-.social{
+.social {
     width: 56px;
 }
 
-.social a img{
+.social a img {
     width: 100%;
 }
 
-.main-footer > .footer-elem li a:hover{
+.main-footer > .footer-elem li a:hover {
     font-size: 25px;
 }
 

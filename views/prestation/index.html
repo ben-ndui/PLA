@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ID=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="Patrice LARMOYER" content="">
+    <meta name="description" content="Expert en Management de la Qualité et Efficacité des Processus, Pla development vous accompagne vers l’Agilité du système de Management et les projets d’amélioration ">
+    <meta name="Patrice LARMOYER" content="Expert en Management de la Qualité et Efficacité des Processus, Pla development vous accompagne vers l’Agilité du système de Management et les projets d’amélioration ">
     <link rel="icon" type="image/svg" href="../../assets/logo/logo2.svg" />
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/mobile.css">
     <link rel="stylesheet" type="text/css" href="../../css/prestation.css">
-    <title>Prestation</title>
+    <title>Prestations d’Audit, Conseil, Accompagnement en LEAN Management</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            smoothScroll.init();
+            $("a").click(function() {
+                var regExp = new RegExp(/\/\/.+?(\/.+?)\#/);
+                if ( window.location.hash && window.location.pathname != regExp.exec(this.href)[1]) {
+                    window.location.href = this.href;
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 
-<header class="my-header header-pages header-reference">
-    <img src="../../assets/background/prestation.svg" alt="photo_référence" title="photo_référence">
-
+<header class="my-header header-prestation">
+    <img src="../../assets/background/contrat_prestations.svg" alt="contrat_prestations" title="contrat_prestations" class="main">
+    <div class="logo"></div>
     <!-- NAVIGATION BAR -->
     <nav class="header-nav-bar">
         <div class="header-nav-bar-humburger">
@@ -28,19 +41,18 @@
         </div>
 
         <ul class="menu-coulissant">
-            <li><a href="../../index.html" class="link link-nav-bar">ACCUEIL</a></li>
-            <li><a href="../realisation/index.html" class="link link-nav-bar">REALISATIONS</a></li>
-            <li><a href="index.html" class="link link-nav-bar">PRESTATIONS</a></li>
-            <li><a href="../../views/contact/index.html" class="link link-nav-bar">CONTACT</a></li>
+            <li><a href="../../index.html" class="link link-nav-bar">Acceuil</a></li>
+            <li><a href="../../views/realisation/index.html" class="link link-nav-bar">Réalisations</a></li>
+            <li><a href="index.html" class="link link-nav-bar">Prestations</a></li>
+            <li><a href="../../views/contact/index.html" class="link link-nav-bar">Contact</a></li>
         </ul>
 
         <div class="menu">
-            <div class="logo"></div>
             <ul>
-                <li><a href="../../index.html" class="link link-nav-bar">ACCUEIL</a></li>
-                <li><a href="../realisation/index.html" class="link link-nav-bar">REALISATIONS</a></li>
-                <li><a href="index.html" class="link link-nav-bar">PRESTATIONS</a></li>
-                <li><a href="../../views/contact/index.html" class="link link-nav-bar">CONTACT</a></li>
+                <li><a href="../../index.html" class="link link-nav-bar">Accueil</a></li>
+                <li><a href="../../views/realisation/index.html" class="link link-nav-bar">Réalisations</a></li>
+                <li><a href="index.html" class="link link-nav-bar">Prestations</a></li>
+                <li><a href="../../views/contact/index.html" class="link link-nav-bar">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -51,23 +63,22 @@
         ----------------------------------->
     <div class="logo-and-title">
         <h1 class="link">
-            <!--
-                Si vous voulez ajouter un titre directement
-                dans la page
-            -->
+            Prestations
         </h1>
     </div>
 
 </header>
 
 <main class="container">
-    <div class="title-bloc">
-        <p class="top">
-            La définition des projets et prestations est par nature variable en fonction du besoin.
-            Ils feront l’objet d’un plan taillé sur mesure, pour cibler au mieux l’intervention
-        </p>
 
-        <h1 class="title-strong">Audit</h1>
+    <p class="top conseil-audit" id="audit">
+        La définition des projets et prestations est par nature variable en fonction du besoin.
+        Ils feront l’objet d’un plan taillé sur mesure, pour cibler au mieux l’intervention
+    </p>
+
+    <h1 class="title-strong">Audit</h1>
+
+    <div class="title-bloc">
 
         <div class="title-description">
             <p class="top">
@@ -81,11 +92,12 @@
 
     <div class="blog-card">
         <img src="../../assets/prestations/audit.svg" alt="audit_texte" title="audit_text"/>
+        <span id="conseil" class="conseil-audit"></span>
     </div>
 
-    <div class="title-bloc">
-        <h1 class="title-strong">Conseil et Accompagnement</h1>
+    <h1 class="title-strong">Conseil et Accompagnement</h1>
 
+    <div class="title-bloc">
         <div class="title-description">
             <p class="top">
                 Ces actions conduites en mode formation ou en projet, conduisent à des transformations.
@@ -110,7 +122,7 @@
     </ul>
     <ul class="footer-elem footer-row footer-elem-social">
         <h2>MES RESEAUX</h2>
-        <li class="social social-linkedin"><a href="www.linkedin.com/in/patrice-larmoyer"><img src="../../assets/logo/linkedin.svg" alt="logo_linkedin_pla_development" title="logo_linkedin_pla_development"></a></li>
+        <li class="social social-linkedin"><a href="https://www.linkedin.com/in/patrice-larmoyer"><img src="../../assets/logo/linkedin.svg" alt="logo_linkedin_pla_development" title="logo_linkedin_pla_development"></a></li>
         <li class="social social-instagram"><a href="#"><img src="../../assets/logo/instagram.svg" alt="logo_instagram_pla_development" title="logo_instagram_pla_development"></a></li>
     </ul>
     <!--

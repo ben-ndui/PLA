@@ -1,23 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ID=Edge">
     <meta name="viewport" content="width=320" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="Patrice LARMOYER" content="">
-    <link rel="icon" type="image/svg" href="assets/logo/logo2.svg" />
+    <meta name="description" content="Expert en Management de la Qualité et Efficacité des Processus, Pla development vous accompagne vers l’Agilité du système de Management et les projets d’amélioration.">
+    <meta name="Patrice LARMOYER" content="Expert en Management de la Qualité et Efficacité des Processus, Pla development vous accompagne vers l’Agilité du système de Management et les projets d’amélioration.">
+    <link rel="icon" type="image/svg" href="assets/logo/LOGO_Pla-Development.jpg"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <title>Pla development</title>
+    <title>Le LEAN Management, résolument et raisonnablement </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        /*$(function(){
+            $('html, body').animate({
+                scrollTop: $('#audit').offset().top
+            }, 2000);
+            return false;
+        });*/
+
+        $(document).ready(function() {
+
+            $('.link').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                return false;
+            });
+        });
+    </script>
 </head>
 <body>
 
     <header class="my-header">
-        <img src="assets/background/paysage.jpg" alt="photo_paysage_lean" title="photo_paysage_lean">
-
+        <img src="assets/background/paysage3.jpg" alt="photo_paysage_lean" title="photo_paysage_lean">
+        <div class="logo"></div>
         <!-- NAVIGATION BAR -->
         <nav class="header-nav-bar">
             <div class="header-nav-bar-humburger">
@@ -27,19 +48,18 @@
             </div>
 
             <ul class="menu-coulissant">
-                <li><a href="index.html" class="link link-nav-bar">ACCUEIL</a></li>
-                <li><a href="views/realisation/index.html" class="link link-nav-bar">REALISATIONS</a></li>
-                <li><a href="views/prestation/index.html" class="link link-nav-bar">PRESTATIONS</a></li>
-                <li><a href="views/contact/index.html" class="link link-nav-bar">CONTACT</a></li>
+                <li><a href="index.html" class="link link-nav-bar">Acceuil</a></li>
+                <li><a href="views/realisation/index.html" class="link link-nav-bar">Réalisations</a></li>
+                <li><a href="views/prestation/index.html" class="link link-nav-bar">Prestations</a></li>
+                <li><a href="views/contact/index.html" class="link link-nav-bar">Contact</a></li>
             </ul>
 
             <div class="menu">
-                <div class="logo"></div>
                 <ul>
-                    <li><a href="index.html" class="link link-nav-bar">ACCUEIL</a></li>
-                    <li><a href="views/realisation/index.html" class="link link-nav-bar">REALISATIONS</a></li>
-                    <li><a href="views/prestation/index.html" class="link link-nav-bar">PRESTATIONS</a></li>
-                    <li><a href="views/contact/index.html" class="link link-nav-bar">CONTACT</a></li>
+                    <li><a href="index.html" class="link link-nav-bar">Accueil</a></li>
+                    <li><a href="views/realisation/index.html" class="link link-nav-bar">Réalisation</a></li>
+                    <li><a href="views/prestation/index.html" class="link link-nav-bar">Prestation</a></li>
+                    <li><a href="views/contact/index.html" class="link link-nav-bar">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -50,8 +70,7 @@
             ----------------------------------->
         <div class="logo-and-title">
             <h1 class="link">
-                LA PERFORMANCE
-                PAR L'EFFICACITE DES PROCESSUS
+                La Performance par l'Efficacité des Processus
             </h1>
         </div>
 
@@ -63,6 +82,10 @@
             Fort heureusement, la vision de la Qualité a migré d’un système documentaire, vers un système de performance.
             Pla development vous accompagne dans ce voyage, en appliquant les outils et méthodes du LEAN Management et de l’Agilité, qui conduit à
             la digitalisation et aux transformations 4.0
+        </p>
+        
+        <p class="top">
+            <img src="assets/background/cloud_performance.jpg" alt="cloud_performance" title="cloud_performance">
         </p>
 
         <h1 class="title-strong">Domaines d'intervention</h1>
@@ -79,13 +102,13 @@
                 <div class="content">
                     <div class="front">
                         <img class="img" src="assets/background/paysage.jpg" alt="Focalisons sur les résultats" title="Focalisons sur les résultats"><!-- IMAGE CARD #1 -->
-                        <h3 class="my-h3">Focalisons sur les résultat</h3>
+                        <h3 class="my-h3">Outils et méthodes</h3>
                     </div>
                     <div class="back">
                         <h3>Outils et méthodes</h3>
                         <p>
-                            Les outils et méthodes tels que 8D, 5S, etc… associés aux Kaizen et Gemba,
-                            sont utilisés spécifiquement pour la résolution de problèmes et l’amélioration continue.
+                            les outils et méthodes tels que 8D, 5S, Hishikawa, AMDEC, pareto, sont utilisés pour les analyses et résolution de problèmes.
+                            Les méthodes telles que 6 sigma, DMAIC, Kaizen s’associent aux démarches LEAN
                         </p>
                     </div>
                 </div>
@@ -94,13 +117,14 @@
             <div class="card">
                 <div class="content">
                     <div class="front">
-                        <img class="img" src="assets/background/photo_Efficacité.jpg" alt="photo_Efficacité" title="photo_Efficacité"><!-- IMAGE CARD #2 -->
+                        <img class="img" src="assets/background/photo_efficacite.jpg" alt="photo_Efficacité" title="photo_Efficacité"><!-- IMAGE CARD #2 -->
                         <h3 class="my-h3">Efficacité</h3>
                     </div>
                     <div class="back">
-                        <h3>Titre</h3>
+                        <h3>Efficacité</h3>
                         <p>
-                           Content
+                            « produire le maximum de résultats avec le minimum d'efforts, de moyens ». L’approche LEAN, associée à la bonne utilisation des outils,
+                            permet de réaliser des projets au niveau des processus ou du système .
                         </p>
                     </div>
                 </div>
@@ -109,13 +133,14 @@
             <div class="card">
                 <div class="content">
                     <div class="front">
-                        <img class="img" src="assets/background/photo_système_qualité.jpg" alt="photo_système_qualité" title="photo_système_qualité"><!-- IMAGE CARD #3 -->
+                        <img class="img" src="assets/background/photo_systeme_qualite.jpg" alt="photo_système_qualité" title="photo_système_qualité"><!-- IMAGE CARD #3 -->
                         <h3 class="my-h3">Système de Management</h3>
                     </div>
                     <div class="back">
-                        <h3>Titre</h3>
+                        <h3>Système de Management</h3>
                         <p>
-                           Content
+                            « je fais ce que je dis, je dis ce que je fais ». Ainsi le système supporte le Business efficacement et qualitativement.
+                            Il est Agile pour évoluer avec l’environnement ; il est conforme aux normes ISO de référence
                         </p>
                     </div>
                 </div>
@@ -136,36 +161,47 @@
         </p>
 
         <section class="container container-home-presentation">
-            <div class="card card-prestation">
-                <div class="content">
-                    <div class="front">
-                        <img class="img-audit" src="assets/logo/audit.svg" alt="logo_audits" title="logo_audits">
-                        <h3 class="presta-title">AUDITS</h3>
-                    </div>
-                    <div class="back">
-                        <h3>Title Back</h3>
-                        <p>
-                            Description back
-                        </p>
+            <a href="views/prestation/index.html#audit" class="link">
+                <div class="card card-prestation">
+                    <div class="content">
+                        <div class="front">
+                            <img class="img-audit" src="assets/logo/audit.svg" alt="logo_audits" title="logo_audits">
+                            <h3 class="presta-title">Audit</h3>
+                        </div>
+                        <div class="back">
+                            <h3>Audit</h3>
+                            <p>
+                                Evaluer sa conformité aux référentiels normatifs,
+                                vérifier l’adéquation du système aux exigences des parties prenantes, ou s’assurer...
+                                <br/>
+                                <br/>
+                                En savoir plus >>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="card card-prestation">
-                <div class="content">
-                    <div class="front">
-                        <img class="img-audit" src="assets/logo/audit.svg" alt="logo_audits" title="logo_audits">
-                        <h3 class="presta-title">Conseil, Accompagnement</h3>
-                    </div>
-                    <div class="back">
-                        <h3>CONSEIL, ACCOMPAGNEMENT </h3>
-                        <p>
-                            Ces actions conduites en mode formation ou en projet, conduisent à des transformations.
-                            Le savoir-faire de pla development en Management …
-                        </p>
+            <a href="views/prestation/index.html#conseil">
+                <div class="card card-prestation">
+                    <div class="content">
+                        <div class="front">
+                            <img class="img-audit" src="assets/components/icone_conseil_accompagnement.svg" alt="logo_audits" title="logo_audits">
+                            <h3 class="presta-title">Conseil, Accompagnement</h3>
+                        </div>
+                        <div class="back">
+                            <h3>Conseil, Accompagnement</h3>
+                            <p>
+                                Ces actions conduites en mode formation ou en projet, conduisent à des transformations.
+                                Le savoir-faire de pla development en Management …
+                                <br/>
+                                <br/>
+                                En savoir plus >>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </section>
 
         <!---------------------------------------------------------------------------
@@ -175,8 +211,15 @@
         <h1 class="title-strong">Réalisations</h1>
 
         <p class="top">
-            <a href="views/realisation/index.html" title="En cliquant ici, vous serez redirigé vers la page réalisation">Voir nos réalisations =></a>
+            Fort heureusement, la vision de la Qualité a migré d’un système documentaire, vers un système de performance.
+            Pla development vous accompagne dans ce voyage, en appliquant les outils et méthodes du LEAN Management et de l’Agilité, qui conduit à
+            la digitalisation et aux transformations 4.0
+            <div class="top-en-savoir-plus">
+                <a href="views/realisation/index.html" title="En cliquant ici, vous serez redirigé vers la page réalisation"><img alt="en_savoir_plus" title="en_savoir_plus" src="assets/components/en_savoir_plus.png"></a>
+            </div>
         </p>
+
+        <h1 class="title-strong">Présentation</h1>
 
         <section class="container container-home-presentation">
             <div class="home-elem home-elem-image"><img src="assets/profil_images/patrice.svg" alt="" title=""></div>

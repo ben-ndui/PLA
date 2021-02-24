@@ -37,6 +37,22 @@
     top: 0;
     transform: translate(-10%, 0);
 }
+
+.header-prestation{
+    position: relative;
+    background: #FF6100;
+}
+
+.header-prestation img{
+    object-fit: contain;
+    object-position: center;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    transform: translate(0, 0);
+}
+
 .title-bloc{
     margin-left: 5%;
     width: 90vw;
