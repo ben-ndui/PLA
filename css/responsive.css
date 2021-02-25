@@ -6,7 +6,7 @@
     }
 
     .link{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .link-responsive{
@@ -18,7 +18,7 @@
     }
 
     .logo{
-        display: none;
+        display: flex;
     }
 
     .top, .bottom{
@@ -51,11 +51,15 @@
         display: block;
         text-align: center;
         width: 100%;
-        margin: 50px auto;
+        margin: 0 auto;
     }
 
     .home-elem-image{
         width: 50%;
+    }
+
+    .my-element-elem .my-img{
+        width: 40%;
     }
 
     .text-pres-service {
@@ -67,9 +71,10 @@
 
     .my-header .logo-and-title {
         position: absolute;
-        top: 80%;
-        left: 30%;
-        transform: translate(-30%, -60%);
+        width: 100%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
     }
 
     .my-header .header-nav-bar{
@@ -77,6 +82,7 @@
     }
     .my-header .header-nav-bar .header-nav-bar-humburger{
         display: block;
+        float: right;
     }
 
     .my-header-nav-bar .menu-coulissant{
@@ -112,6 +118,11 @@
         background: var(--globalOrange);
     }
 
+    .header-nav-bar .menu-coulissant{
+        text-align: right;
+        padding-right: 12%;
+    }
+
     .container-service, .container-home-presentation, .main-footer, .container-realisation, .my-element{
         display: flex;
         flex-direction: column;
@@ -122,6 +133,14 @@
     }
 
     .card{
+        width: 100%;
+    }
+
+    .top-en-savoir-plus img{
+        width: 35%;
+    }
+
+    .paraph{
         width: 100%;
     }
 
@@ -160,8 +179,28 @@
 
 @media all and (min-width: 400px) and (max-width: 800px){
 
+    .strong-responsive{
+        font-size: 30px;
+    }
+
+    .title-strong{
+        font-size: 50px;
+    }
+
+    .link{
+        font-size: 56px;
+    }
+
+    .top-en-savoir-plus img{
+        width: 25%;
+    }
+
     .more-infos{
         padding: 0;
+    }
+
+    .top{
+        font-size: 22px;
     }
 
     .top img{
@@ -222,6 +261,14 @@
     .blog-card{
         width: 95%;
     }
+
+    .my-header .logo-and-title {
+        position: absolute;
+        width: 100%;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+    }
 }
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
@@ -229,6 +276,109 @@
     .card {
         width: 97%;
         height: 400px;
+    }
+}
+
+@media all and (max-width: 700px) only (orientation: landscape){
+
+    .link{
+        font-size: 20px;
+    }
+
+    .title-strong{
+        font-size: 18px;
+    }
+
+    .top, .bottom{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-contact{
+        display: block;
+        z-index: 10;
+    }
+
+    .home-elem, .main-footer > .footer-elem{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .home-elem-image{
+        width: 50%;
+    }
+
+    .text-pres-service {
+        width: 100%;
+        font-size: 12px;
+        margin: 5% 10% 5% auto;
+        text-align: justify;
+    }
+
+    .my-header .logo-and-title {
+        position: absolute;
+        top: 80%;
+        left: 30%;
+        transform: translate(-30%, -60%);
+    }
+
+    .my-header .header-nav-bar{
+        padding: 10px;
+    }
+    .my-header .header-nav-bar .header-nav-bar-humburger{
+        display: block;
+    }
+
+    .my-header-nav-bar .menu-coulissant{
+        transition: display 10s ease-in-out;
+    }
+
+    .my-header .header-nav-bar:hover > .menu-coulissant{
+        display: block;
+        transition: display 10s ease-in-out;
+    }
+
+    .my-header-nav-bar .menu-coulissant li{
+        list-style-type: none;
+        padding: 5px;
+        transition: all 10s ease-in-out;
+    }
+
+    .my-header-nav-bar .menu-coulissant li:hover > a{
+        border-bottom: 1px solid var(--globalOrange);
+    }
+
+    .my-header-nav-bar .menu-coulissant li a{
+        text-decoration: none;
+        color: var(--text-color-theme);
+    }
+
+    .my-header .header-nav-bar .header-nav-bar-humburger{
+        opacity: 1;
+        border: 1px solid var(--globalOrange);
+    }
+
+    .my-header .header-nav-bar .header-nav-bar-humburger .humburger-bar{
+        background: var(--globalOrange);
+    }
+
+    .card{
+        width: 80%;
+        height: 250px;
+    }
+
+    .card-prestation{
+        width: 100%;
     }
 }
 

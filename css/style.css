@@ -46,9 +46,10 @@ h1 {
 .title-strong {
     font-size: 50px;
     text-align: left;
-    margin: 50px auto;
+    margin: 12px auto;
     padding-left: 7.5%;
     color: #FF6100;
+    border-bottom: 1px solid var(--globalOrange);
 }
 
 .link {
@@ -60,6 +61,15 @@ h1 {
 
 .surbrillance {
     color: var(--ultra-light-orange);
+}
+
+.paraph{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    width: 88%;
+    margin: auto;
+    font-size: 25px;
 }
 
 .top, .bottom {
@@ -85,17 +95,14 @@ h1 {
 }
 
 .top-en-savoir-plus{
-    float: right;
-    width: 12%;
-    margin-top: -5%;
-    margin-right: 5%;
+    text-align: right;
+    padding-right: 7%;
     /*border: 1px solid red;/**
     z-index: 100;*/
 }
 
 .top-en-savoir-plus img{
-    width: 100%;
-    height: 100%;
+    width: 15%;
 }
 
 .text-pres-service {
@@ -496,6 +503,32 @@ h1 {
     background: linear-gradient(rgba(255, 97, 0, .2), rgba(255, 97, 0, .2)) left/0% 100% no-repeat;
     animation: anime 2s ease-in-out infinite alternate;
     border-bottom: 1px solid var(--globalOrange);
+}
+
+/**
+FLAG BUTTON
+ */
+
+.lang{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 20px;
+    left: 30%;
+    width: 80px;
+    z-index: 100;
+    overflow: hidden;
+    /*border: 1px solid red;/**/
+}
+
+.lang a{
+    text-align: center;
+    /*border: 1px solid blue;/**/
+}
+
+.lang a .flag img{
+    width: 100%;
 }
 
 /************
